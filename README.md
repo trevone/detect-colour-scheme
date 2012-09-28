@@ -1,11 +1,10 @@
-detect-colour-scheme
-====================
+#Detect Colour Scheme
 
 Detects the colour theme for your site
 
 At the moment it only supports chrome.
 
-Requires jQuery
+###Requires jQuery
 
-#Usage:
-       <code><script src="detectColour.js"></script></code>
+##Usage:
+<code>&lt;script src="detectColour.js"&gt;&lt;/script&gt;</code>
