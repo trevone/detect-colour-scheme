@@ -15,14 +15,21 @@
     })
     
     jQuery('*').each(function(){
-        var background = jQuery(this).css('background');
+        /* for starters check your standards, I suggest crerate a class for all attrs */
+        var background = jQuery(this).css('background-color');
         var colour = jQuery(this).css('color');
         
         colour = returnColour(colour);
         background = returnColour(background);
         
-        groupColours(background[0]);
-        groupColours(colour[0]);
+        // you were probably testing for all kinds of array[0]'s? lol, start with the parent and work your way down.
+        // was it today that you shoke off progression enhancement like it was nothing? */
+        if( Object.prototype.toString.call( background ) === '[object Array]' ) {
+           groupColours(background[0]);
+        }
+        if( Object.prototype.toString.call( colour ) === '[object Array]' ) {
+           groupColours(colour[0]);
+        }
         
     });
     
