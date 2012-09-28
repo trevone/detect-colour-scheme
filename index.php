@@ -5,17 +5,19 @@
         <title>Detect Colour Scheme</title>
         <style type="text/css">
             body{
-                background: #efefef;
+                background-color: #efefef;
+                color:#00000;
             }
             #divRed{
                 width: 200px;
                 height: 200px;
-                background: #ff0000;
+                background-color: #ff0000;
+                
             }
             #divGreen{
                 width: 200px;
                 height: 200px;
-                background: #00ff00;
+                background-color: #00ff00;
             }
         </style>
     </head>
