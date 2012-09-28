@@ -7,5 +7,5 @@ At the moment it only supports chrome.
 
 Requires jQuery
 
-Usage:
-        <script src="detectColour.js"></script>
+#Usage:
+       <code><script src="detectColour.js"></script></code>
