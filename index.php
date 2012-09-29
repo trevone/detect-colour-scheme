@@ -33,7 +33,7 @@
             }
         </style>
         <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="DetectColour.js"></script>
+        <script type="text/javascript" src="detectColour.js"></script>
     </head>
     <body>
         <div id="divRed"></div>
