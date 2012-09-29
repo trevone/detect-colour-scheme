@@ -18,9 +18,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         groupColors:   function ( matchColor ){
             var matchCount = 0;
             for( var i in this.colors ) if( this.colors[i] == matchColor ) matchCount++;
-            if( matchCount == 0 && !!matchColor ){
-                this.colors.push(matchColor);
-            }
+            if( matchCount == 0 && !!matchColor )this.colors.push(matchColor);
         },
         hasAlpha:   function ( attr ){
             return ( attr.split(',')[3] == undefined) ? 'rgb' : 'rgba';
