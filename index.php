@@ -5,35 +5,24 @@
         <title>Detect Colour Scheme</title>
         <style type="text/css">
             body{
-                background-color: #efefef;
-                color:#00000;
+                background-color: #efefef;color:#00000;
             }
             #divRed{
-                width: 200px;
-                height: 200px;
-                background-color: #ff0000;
+                width: 200px;height: 200px;background-color: #ff0000;
             }
             #divGreen{
-                width: 200px;
-                height: 200px;
-                background-color: #00ff00;
+                width: 200px;height: 200px;background-color: #00ff00;
             }
             #div1{
-                width: 200px;
-                height: 200px;
-                background-color: #678e44;
+                width: 200px;height: 200px;background-color: #678e44;
             }
             #div2{
-                width: 200px;
-                height: 200px;
-                background-color: #834f00;
+                width: 200px;height: 200px;background-color: #834f00;
             }
             #div3{
-                width: 200px;
-                height: 200px;
-                background-color: #23500;
+                width: 200px;height: 200px;background-color: #23500;
             }
-            #detectColorHolder{
+            #colors{
                 position: absolute; top: 0px; right: 0px; padding: 10px; background: #cccccc;
             }
             .color{
@@ -44,19 +33,17 @@
             }
         </style>
         <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="detectColour.js"></script>
+        <script type="text/javascript" src="DetectColour.js"></script>
     </head>
     <body>
         <div id="divRed"></div>
         <div id="divGreen"></div>
         <div id="div1"></div>
         <div id="div2"><h3>Test</h3></div>
-        <div id="div3"><span>test</span></div>
+        <div id="div3"><span id="tt">test</span></div>
         <script type="text/javascript">
         jQuery(document).ready(function() {
-            var detectColor = new DetectColor.Load();
-            console.log("Heres your object:");
-            console.log( detectColor );
+            var theme = new DetectColor.Load();
         });
         </script>
     </body>
