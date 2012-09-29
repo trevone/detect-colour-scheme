@@ -37,6 +37,9 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
     */
     DetectColor.Load.prototype = {
         
+        /* 
+         * Set up some constants
+         */
         colors : [],
         attrs : ["border-color","background-color","color","font-color","outline-color"],
         hexDigits : ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"],
@@ -97,7 +100,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         },
         
         /* 
-         * Called from the constructor and returns all the stuff it created 
+         * Called from the constructor and returns all the colors it found 
          * DetectColor.Load.draw();
          */
         draw: function(){
