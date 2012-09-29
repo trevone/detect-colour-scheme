@@ -25,8 +25,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
 ( function (){
     
     /* 
-    * Strip a string down to its color
-    * DetectColor.Load.returnColor( someColor );
+    * Constructor
     */
     DetectColor.Load = function() {
         this.colors = this.draw(); 
@@ -46,7 +45,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Strip a string down to its color
-         * DetectColor.Load.returnColor( someColor );
+         * this.returnColor( someColor );
          */
         returnColor: function( string ) {
             string.match( / *\([^)]*\) */g );
@@ -63,7 +62,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Checks a color string for the alpha attribute
-         * DetectColor.Load.hasAlpha( someColor );
+         * this.hasAlpha( someColor );
          */
         hasAlpha: function ( attr ){
             return ( attr.split(',')[3] == undefined) ? 'rgb' : 'rgba';
@@ -71,7 +70,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Converts single value to Hex
-         * DetectColor.Load.toHex( 120 );
+         * this.toHex( 120 );
          */
         toHex: function ( value ) {
             return isNaN( value ) ? "00" : this.hexDigits[ ( value - value % 16 ) / 16 ] + this.hexDigits[ value % 16];
@@ -79,7 +78,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Converts rgb to Hex
-         * DetectColor.Load.rgbToHex('rgb(120, 120, 0));
+         * this.rgbToHex('rgb(120, 120, 0));
          */
         rgbToHex: function ( rgb ) {
             if( this.hasAlpha( rgb ) ) return rgb;
@@ -90,7 +89,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Used to remove duplicated colors
-         * DetectColor.Load.removeDuplicates(['#eee',#eee]);
+         * this.removeDuplicates(['#eee',#eee]);
          */
         removeDuplicates: function ( array ) {
             var i, uniques = [], object = {};
@@ -101,7 +100,7 @@ DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
         
         /* 
          * Called from the constructor and returns all the colors it found 
-         * DetectColor.Load.draw();
+         * this.draw(); //only called from here
          */
         draw: function(){
             jQuery('*').each( function () { 
