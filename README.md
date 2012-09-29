@@ -1,4 +1,4 @@
-#Detect Colour Scheme
+#Detect Color Scheme
 
 Creates an object with properties
 
