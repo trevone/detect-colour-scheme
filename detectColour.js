@@ -19,7 +19,7 @@
  * removeDuplicates - Function Array
  * draw - Function Array
 */
-
+console.log("begin");
 DetectColor = ( typeof DetectColor === 'undefined' ) ? {} : DetectColor;
 
 ( function (){
